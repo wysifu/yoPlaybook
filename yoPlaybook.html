@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="yoPlaybook.css">
+    <title>yo playbook</title>
+</head>
+
+<body>
+    <header>
+        <div class="scoreBoard">
+            <!--LA--><iframe src="https://free.timeanddate.com/clock/i83c1j1n/n137/fn8/fs18/fc00ef07/tc000/bo2/pl3/pr3/pt3/pb5/tt0/tw1/tm1/th1/ta1/tb4" frameborder="0" width="200" height="50"></iframe>
+            <!--stl--><iframe src="https://free.timeanddate.com/clock/i83c1j1n/n64/fn8/fs18/fc00ef07/tc000/bo2/pl3/pr3/pt3/pb5/tt0/tw1/tm1/th1/ta1/tb4" frameborder="0" width="200" height="50"></iframe>
+            <!--NY--><iframe src="https://free.timeanddate.com/clock/i83c1j1n/n179/fn8/fs18/fc00ef07/tc000/bo2/pl3/pr3/pt3/pb5/tt0/tw1/tm1/th1/ta1/tb4" frameborder="0" width="200" height="50"></iframe>
+            <!--utc/gmt--><iframe src="https://free.timeanddate.com/clock/i83c1j1n/fn8/fs18/fc00ef07/tc000/bo2/pl3/pr3/pt3/pb5/tt0/tw1/tm1/th1/ta1/tb4" frameborder="0" width="200" height="50"></iframe>
+            <!--london--><iframe src="https://free.timeanddate.com/clock/i83c1j1n/n136/fn8/fs18/fc00ef07/tc000/bo2/pl3/pr3/pt3/pb5/tt0/tw1/tm1/th1/ta1/tb4" frameborder="0" width="200" height="50"></iframe>
+            <!--athens--><iframe src="https://free.timeanddate.com/clock/i83c1j1n/n26/fn8/fs18/fc00ef07/tc000/bo2/pl3/pr3/pt3/pb5/tt0/tw1/tm1/th1/ta1/tb4" frameborder="0" width="200" height="50"></iframe>
+            <!--tokyo--><iframe src="https://free.timeanddate.com/clock/i83c1j1n/n248/fn8/fs18/fc00ef07/tc000/bo2/pl3/pr3/pt3/pb5/tt0/tw1/tm1/th1/ta1/tb4" frameborder="0" width="200" height="50"></iframe>
+
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text"></span></a> </div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                {
+                "symbols": [
+                    {
+                    "description": "",
+                    "proName": "FX:GBPJPY"
+                    },
+                    {
+                    "description": "",
+                    "proName": "FX:GBPUSD"
+                    },
+                    {
+                    "description": "",
+                    "proName": "FX:USDJPY"
+                    },
+                    {
+                    "description": "",
+                    "proName": "FX:AUDJPY"
+                    },
+                    {
+                    "description": "",
+                    "proName": "FX:EURUSD"
+                    },
+                    {
+                    "description": "",
+                    "proName": "FX:EURJPY"
+                    },
+                    {
+                    "description": "",
+                    "proName": "COINBASE:BTCUSD"
+                    },
+                    {
+                    "description": "",
+                    "proName": "COINBASE:ETHUSD"
+                    },
+                    {
+                    "description": "",
+                    "proName": "COINBASE:SHIBUSD"
+                    },
+                    {
+                    "description": "",
+                    "proName": "COINBASE:ADAUSD"
+                    },
+                    {
+                    "description": "",
+                    "proName": "OANDA:XAUUSD"
+                    },
+                    {
+                    "description": "",
+                    "proName": "OANDA:US30USD"
+                    },
+                    {
+                    "description": "",
+                    "proName": "CURRENCYCOM:US30"
+                    },
+                    {
+                    "description": "",
+                    "proName": "OANDA:NAS100USD"
+                    },
+                    {
+                    "description": "",
+                    "proName": "CURRENCYCOM:US100"
+                    }
+                ],
+                "showSymbolLogo": true,
+                "colorTheme": "dark",
+                "isTransparent": false,
+                "displayMode": "adaptive",
+                "locale": "en"
+                }
+                </script>
+            </div>
+                <!-- TradingView Widget END -->
+        </div>
+    </header>  =
+
+    <div class="streamlinedAnalysis">
+        <form>
+            <label for="Date">Date:</label>
+            <input type="date" name="Date" id="Date"></input>
+
+            <br>
+            <br>
+
+            <label for="Pair">Pair :</label>
+            <input type="text" name="Pair" id="Pair"></input>
+
+            <br>
+            <br>
+
+            <label for="local">local time:</label>
+            <input type="text" name="local" id="local"></input>
+
+            <label for="mt4">mt4 time:</label>
+            <input type="text" name="mt4" id="mt4"></input>
+
+            <h1>M</h1>
+
+            <label>candle is : </label>
+            
+            <label for="bearish">bearish</label>
+            <input type="radio" name="structure" id="bearish" value="bearish">
+            </label for="bullish">bullish</label>
+            <input type="radio" name="structure" id="bullish" value="bullish">
+            </label for="doji">doji</label>
+            <input type="radio" name="structure" id="doji" value="doji">
+
+            <br>
+            <br>
+
+            <label for="describe">describe candle : </label>
+            <input type="text" name=draw id="describe">
+
+            <br>
+            <br>
+
+            <label for="remaining">time remaining : </label>
+            <input type="text" name=time id="remaining">
+
+            <br>
+            <br>
+
+            <label for="cA">cA situation : </label>
+            <input type="text" name=caSituation id="cA">
+
+            <br>
+            <br>
+
+            <label for="resistance">resistance(s) @ : </label>
+            <input type="text" name=R id="resistance">
+
+            <br>
+            <br>
+
+            <label for="support">support(s) @ : </label>
+            <input type="text" name=S id="support">
+
+            <br>
+            <br>
+
+            <h1 class="W">W</h1>
+
+            <h4 class="W">iD trend & structure</h4>
+            
+            <label for="uptrend">uptrend</label>
+            <input type="radio" name="trend" id="uptrend" value="uptrend">
+            </label for="downtrend">downtrend</label>
+            <input type="radio" name="trend" id="downtrend" value="downtrend">
+            </label for="consolidation">consolidation</label>
+            <input type="radio" name="trend" id="consolidation" value="consolidation">
+
+            <h3>@</h3>
+
+            <label for="HH">HH</label>
+            <input type="radio" name="trendpoint" id="HH" value="HH">
+            <label for="HL">HL</label>
+            <input type="radio" name="trendpoint" id="HL" value="HL">
+            <label for="LH">LH</label>
+            <input type="radio" name="trendpoint" id="LH" value="LH">
+            <label for="LL">LL</label>
+            <input type="radio" name="trendpoint" id="LL" value="LL">
+            <label for="PH">PH</label>
+            <input type="radio" name="trendpoint" id="PH" value="PH">
+            <label for="PL">PL</label>
+            <input type="radio" name="trendpoint" id="PL" value="PL">
+            <label for="H">H</label>
+            <input type="radio" name="trendpoint" id="H" value="H">
+            <label for="L">L</label>
+            <input type="radio" name="trendpoint" id="L" value="L">
+            <label for="range">range</label>
+            <input type="radio" name="trendpoint" id="range" value="range">
+            <label for="??">??</label>
+            <input type="radio" name="trendpoint" id="??" value="??">
+
+            <br>
+            <br>
+            
+            <h4 class="W">iD candlestick analysis</h4>
+
+            <label for="describe">describe candle : </label>
+            <input type="text" name=draw id="describe">
+
+            <br>
+            <br>
+
+            <label for="remaining">time remaining : </label>
+            <input type="text" name=time id="remaining">
+
+            <br>
+            <br>
+
+            <label for="cA">cA situation : </label>
+            <input type="text" name=caSituation id="cA">
+
+            <br>
+            <br>
+            
+            <h4 class="W">iD levels</h4>
+
+            <label for="resistance">resistance(s) @ : </label>
+            <input type="text" name=R id="resistance">
+
+            <br>
+            <br>
+
+            <label for="support">support(s) @ : </label>
+            <input type="text" name=S id="support">
+
+            <h4 class="W">iD momentum</h4>
+
+            <label for="B/R">B / R</label>
+            <input type="radio" name="momentum" id="B/R" value="B/R">
+            <label for="B\R">B \ R</label>
+            <input type="radio" name="momentum" id="B\R" value="B\R">
+            <label for="B/R<">B / R <</label>
+            <input type="radio" name="momentum" id="B/R<" value="B/R<">
+            <label for="B\R>">B \ R ></label>
+            <input type="radio" name="momentum" id="B\R>" value="B\R>">
+            <label for="B/R-">B / R -</label>
+            <input type="radio" name="momentum" id="B/R-" value="B/R-">
+            <label for="B\R-">B \ R -</label>
+            <input type="radio" name="momentum" id="B\R-" value="B\R-">   
+
+            <br>
+            <br>
+
+            <h1 class="D">D</h1>
+
+            <h4 class="D">iD trend & structure</h4>
+            
+            <label for="uptrend">uptrend</label>
+            <input type="radio" name="trend" id="uptrend" value="uptrend">
+            </label for="downtrend">downtrend</label>
+            <input type="radio" name="trend" id="downtrend" value="downtrend">
+            </label for="consolidation">consolidation</label>
+            <input type="radio" name="trend" id="consolidation" value="consolidation">
+
+            <h3>@</h3>
+
+            <label for="HH">HH</label>
+            <input type="radio" name="trendpoint" id="HH" value="HH">
+            <label for="HL">HL</label>
+            <input type="radio" name="trendpoint" id="HL" value="HL">
+            <label for="LH">LH</label>
+            <input type="radio" name="trendpoint" id="LH" value="LH">
+            <label for="LL">LL</label>
+            <input type="radio" name="trendpoint" id="LL" value="LL">
+            <label for="PH">PH</label>
+            <input type="radio" name="trendpoint" id="PH" value="PH">
+            <label for="PL">PL</label>
+            <input type="radio" name="trendpoint" id="PL" value="PL">
+            <label for="H">H</label>
+            <input type="radio" name="trendpoint" id="H" value="H">
+            <label for="L">L</label>
+            <input type="radio" name="trendpoint" id="L" value="L">
+            <label for="range">range</label>
+            <input type="radio" name="trendpoint" id="range" value="range">
+            <label for="??">??</label>
+            <input type="radio" name="trendpoint" id="??" value="??">
+
+            <br>
+            <br>
+            
+            <h4 class="D">iD candlestick analysis</h4>
+
+            <label for="describe">describe candle : </label>
+            <input type="text" name=draw id="describe">
+
+            <br>
+            <br>
+
+            <label for="remaining">time remaining : </label>
+            <input type="text" name=time id="remaining">
+
+            <br>
+            <br>
+
+            <label for="cA">cA situation : </label>
+            <input type="text" name=caSituation id="cA">
+
+            <br>
+            <br>
+            
+            <h4 class="D">iD levels</h4>
+
+            <label for="resistance">resistance(s) @ : </label>
+            <input type="text" name=R id="resistance">
+
+            <br>
+            <br>
+
+            <label for="support">support(s) @ : </label>
+            <input type="text" name=S id="support">
+
+            <h4 class="D">iD momentum</h4>
+
+            <label for="B/R">B / R</label>
+            <input type="radio" name="momentum" id="B/R" value="B/R">
+            <label for="B\R">B \ R</label>
+            <input type="radio" name="momentum" id="B\R" value="B\R">
+            <label for="B/R<">B / R <</label>
+            <input type="radio" name="momentum" id="B/R<" value="B/R<">
+            <label for="B\R>">B \ R ></label>
+            <input type="radio" name="momentum" id="B\R>" value="B\R>">
+            <label for="B/R-">B / R -</label>
+            <input type="radio" name="momentum" id="B/R-" value="B/R-">
+            <label for="B\R-">B \ R -</label>
+            <input type="radio" name="momentum" id="B\R-" value="B\R-">   
+
+            <br>
+            <br>
+
+            <br>
+            <br>
+
+            <h1 class="hourFour">H4</h1>
+
+            <h4 class="hourFour">iD trend & structure</h4>
+            
+            <label for="uptrend">uptrend</label>
+            <input type="radio" name="trend" id="uptrend" value="uptrend">
+            </label for="downtrend">downtrend</label>
+            <input type="radio" name="trend" id="downtrend" value="downtrend">
+            </label for="consolidation">consolidation</label>
+            <input type="radio" name="trend" id="consolidation" value="consolidation">
+
+            <h3>@</h3>
+
+            <label for="HH">HH</label>
+            <input type="radio" name="trendpoint" id="HH" value="HH">
+            <label for="HL">HL</label>
+            <input type="radio" name="trendpoint" id="HL" value="HL">
+            <label for="LH">LH</label>
+            <input type="radio" name="trendpoint" id="LH" value="LH">
+            <label for="LL">LL</label>
+            <input type="radio" name="trendpoint" id="LL" value="LL">
+            <label for="PH">PH</label>
+            <input type="radio" name="trendpoint" id="PH" value="PH">
+            <label for="PL">PL</label>
+            <input type="radio" name="trendpoint" id="PL" value="PL">
+            <label for="H">H</label>
+            <input type="radio" name="trendpoint" id="H" value="H">
+            <label for="L">L</label>
+            <input type="radio" name="trendpoint" id="L" value="L">
+            <label for="range">range</label>
+            <input type="radio" name="trendpoint" id="range" value="range">
+            <label for="??">??</label>
+            <input type="radio" name="trendpoint" id="??" value="??">
+
+            <br>
+            <br>
+            
+            <h4 class="hourFour">iD candlestick analysis</h4>
+
+            <label for="describe">describe candle : </label>
+            <input type="text" name=draw id="describe">
+
+            <br>
+            <br>
+
+            <label for="remaining">time remaining : </label>
+            <input type="text" name=time id="remaining">
+
+            <br>
+            <br>
+
+            <label for="cA">cA situation : </label>
+            <input type="text" name=caSituation id="cA">
+
+            <br>
+            <br>
+            
+            <h4 class="hourFour">iD levels</h4>
+
+            <label for="resistance">resistance(s) @ : </label>
+            <input type="text" name=R id="resistance">
+
+            <br>
+            <br>
+
+            <label for="support">support(s) @ : </label>
+            <input type="text" name=S id="support">
+
+            <h4 class="hourFour">iD momentum</h4>
+
+            <label for="B/R">B / R</label>
+            <input type="radio" name="momentum" id="B/R" value="B/R">
+            <label for="B\R">B \ R</label>
+            <input type="radio" name="momentum" id="B\R" value="B\R">
+            <label for="B/R<">B / R <</label>
+            <input type="radio" name="momentum" id="B/R<" value="B/R<">
+            <label for="B\R>">B \ R ></label>
+            <input type="radio" name="momentum" id="B\R>" value="B\R>">
+            <label for="B/R-">B / R -</label>
+            <input type="radio" name="momentum" id="B/R-" value="B/R-">
+            <label for="B\R-">B \ R -</label>
+            <input type="radio" name="momentum" id="B\R-" value="B\R-">   
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h1 class="emThirty">M30</h1>
+
+            <h4 class="emThirty">iD trend & structure</h4>
+            
+            <label for="uptrend">uptrend</label>
+            <input type="radio" name="trend" id="uptrend" value="uptrend">
+            </label for="downtrend">downtrend</label>
+            <input type="radio" name="trend" id="downtrend" value="downtrend">
+            </label for="consolidation">consolidation</label>
+            <input type="radio" name="trend" id="consolidation" value="consolidation">
+
+            <h3>@</h3>
+
+            <label for="HH">HH</label>
+            <input type="radio" name="trendpoint" id="HH" value="HH">
+            <label for="HL">HL</label>
+            <input type="radio" name="trendpoint" id="HL" value="HL">
+            <label for="LH">LH</label>
+            <input type="radio" name="trendpoint" id="LH" value="LH">
+            <label for="LL">LL</label>
+            <input type="radio" name="trendpoint" id="LL" value="LL">
+            <label for="PH">PH</label>
+            <input type="radio" name="trendpoint" id="PH" value="PH">
+            <label for="PL">PL</label>
+            <input type="radio" name="trendpoint" id="PL" value="PL">
+            <label for="H">H</label>
+            <input type="radio" name="trendpoint" id="H" value="H">
+            <label for="L">L</label>
+            <input type="radio" name="trendpoint" id="L" value="L">
+            <label for="range">range</label>
+            <input type="radio" name="trendpoint" id="range" value="range">
+            <label for="??">??</label>
+            <input type="radio" name="trendpoint" id="??" value="??">
+
+            <br>
+            <br>
+            
+            <h4 class="emThirty">iD candlestick analysis</h4>
+
+            <label for="describe">describe candle : </label>
+            <input type="text" name=draw id="describe">
+
+            <br>
+            <br>
+
+            <label for="remaining">time remaining : </label>
+            <input type="text" name=time id="remaining">
+
+            <br>
+            <br>
+
+            <label for="cA">cA situation : </label>
+            <input type="text" name=caSituation id="cA">
+
+            <br>
+            <br>
+            
+            <h4 class="emThirty">iD levels</h4>
+
+            <label for="resistance">resistance(s) @ : </label>
+            <input type="text" name=R id="resistance">
+
+            <br>
+            <br>
+
+            <label for="support">support(s) @ : </label>
+            <input type="text" name=S id="support">
+
+            <h4 class="emThirty">iD momentum</h4>
+
+            <label for="B/R">B / R</label>
+            <input type="radio" name="momentum" id="B/R" value="B/R">
+            <label for="B\R">B \ R</label>
+            <input type="radio" name="momentum" id="B\R" value="B\R">
+            <label for="B/R<">B / R <</label>
+            <input type="radio" name="momentum" id="B/R<" value="B/R<">
+            <label for="B\R>">B \ R ></label>
+            <input type="radio" name="momentum" id="B\R>" value="B\R>">
+            <label for="B/R-">B / R -</label>
+            <input type="radio" name="momentum" id="B/R-" value="B/R-">
+            <label for="B\R-">B \ R -</label>
+            <input type="radio" name="momentum" id="B\R-" value="B\R-">   
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+        </form>
+    </div>
+</body>
